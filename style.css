@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+body {
+    font-family: "Quicksand";
+    background-color: lightgray
+       
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    
+    color:#fff;
+    text-align: center;
+}
+
+ul {
+    margin:0;
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+    
+}
+
+nav > ul > li {
+    float:left;
+    width:200px;
+    height:70px
+}
+
+
+
+ a {
+    display: inline-block;
+    width:200px;
+    height:70px;
+    padding: 25px 20px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    background-color: #444;
+    color: red;
+}
+
+/*
+.pionowo {
+    position: absolute;
+    top: 70px;
+    overflow: hidden;
+    max-height: ;
+    background-color: #333;
+    
+}
+*/
+
+/*
+nav .text-poziomo:hover~.pionowo{
+    max-height: 400px;
+    transition: max-height 0.4s ease-in;
+    
+    position: relative;
+    top:auto;
+    
+}
+
+*/
+
+ul > li > ul {
+    list-style-type: none;
+    display: none;
+}
+
+ul > li >ul >li {
+    background-color: #333;
+    position:relative;
+}
+
+ul > li:hover > ul {
+    display:block;
+    transition: max-height 0.4s ease-in;
+}
