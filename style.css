@@ -66,24 +66,23 @@ ul > li:hover > ul {
     transition: max-height 0.4s ease-in;
 }
 
+/* container */
+
 .container {
     width: 80%;
     max-width: 700px;
-    min-height: 400px;
-    box-shadow: 2px 2px 5px #444;
-	margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: justify;
 }
-
 .footer {
-	padding: 20px;
-	text-align: center;
-	font-size: 10px;
-    background-color: orange;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+	padding: 20px;
+	text-align: center;
+	font-size: 10px;
+    background-color: orange;
 }
 
