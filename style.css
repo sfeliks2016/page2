@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 * {
-    box-sizing: border-box;
     margin:0;
+    box-sizing: border-box;
 }
 
 body {
@@ -51,29 +51,6 @@ a:hover {
     color: red;
 }
 
-/*
-.pionowo {
-    position: absolute;
-    top: 70px;
-    overflow: hidden;
-    max-height: ;
-    background-color: #333;
-    
-}
-*/
-
-/*
-nav .text-poziomo:hover~.pionowo{
-    max-height: 400px;
-    transition: max-height 0.4s ease-in;
-    
-    position: relative;
-    top:auto;
-    
-}
-
-*/
-
 ul > li > ul {
     list-style-type: none;
     display: none;
@@ -88,3 +65,25 @@ ul > li:hover > ul {
     display:block;
     transition: max-height 0.4s ease-in;
 }
+
+.container {
+    width: 80%;
+    max-width: 700px;
+    min-height: 400px;
+    box-shadow: 2px 2px 5px #444;
+	margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.footer {
+	padding: 20px;
+	text-align: center;
+	font-size: 10px;
+    background-color: orange;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
