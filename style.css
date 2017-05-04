@@ -88,3 +88,23 @@ ul > li:hover > ul {
     display:block;
     transition: max-height 0.4s ease-in;
 }
+
+/* container */
+
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: justify;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	padding: 20px;
+	text-align: center;
+	font-size: 10px;
+    background-color: orange;
+}
