@@ -80,6 +80,10 @@ ul > li:hover > ul {
     overflow:;
 }
 
+.container h2 {
+    margin:20px;
+}
+
 
 .row {
 	display: flex; /* gdy damy sam flex, element zajmie cala dostepna szerokosc kontenera */
