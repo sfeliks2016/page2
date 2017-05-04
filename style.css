@@ -70,13 +70,27 @@ ul > li:hover > ul {
 
 .container {
     width: 80%;
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 10px;
-    text-align: justify;
+    max-width: 600px;
+    min-height:400px; 
     box-shadow: 2px 2px 5px #444;
+	margin: 20px auto;
+    padding: 20px;
+    text-align: center;
     background-color: #fff;
 }
+
+
+.row {
+	display: flex; /* gdy damy sam flex, element zajmie cala dostepna szerokosc kontenera */
+	border: 5px solid #34495e;
+}
+
+.box {
+    flex: 1;
+	padding: 20px;
+	border: 5px solid #3498db;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
