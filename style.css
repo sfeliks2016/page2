@@ -88,8 +88,9 @@ ul > li:hover > ul {
 .row {
 	display: flex; /* gdy damy sam flex, element zajmie cala dostepna szerokosc kontenera */
 	border: 5px solid #34495e;
-    height: 100px;
+    
     flex-direction:row-reverse;
+    flex-wrap: wrap;
 }
 
 .box {
@@ -101,16 +102,18 @@ ul > li:hover > ul {
 .first {
     background-color: #333;
     flex:1;
+    height: 100px;
 }
 
 .second {
     background-color: #f01717;
     flex:2;
+    height: 100px;
 }
 
 /* flex order */
 
-.one {
+.eleven {
     order: -1;
 }
 
@@ -118,11 +121,15 @@ ul > li:hover > ul {
     order: -2;
 }
 
+.one {
+    flex: 100%;
+}
+
 /* flex direction */
 
 .column {
     display: flex;
-    flex-direction:column;
+    flex-direction:column-reverse;
 }
 
 .boxx {
@@ -134,10 +141,39 @@ ul > li:hover > ul {
 	font-weight: 700;
 }
 
+.boxxx {
+    flex: 1;
+    padding: 20px;
+	border: 5px solid #db4134;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+}
+
 .footer {
 	padding: 20px;
 	text-align: center;
 	font-size: 10px;
 	background-color: orange;
 }
+
+/* justify item */
+.wrapper .row {
+    height: 200px;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}
+
+.flex-centering {
+	justify-content: center;
+	align-items: center;
+}
+.center-margin {
+	margin: auto;
+}
+
 
