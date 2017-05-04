@@ -97,6 +97,8 @@ ul > li:hover > ul {
     margin: 20px auto;
     padding: 10px;
     text-align: justify;
+    box-shadow: 2px 2px 5px #444;
+    background-color: #fff;
 }
 .footer {
     position: fixed;
