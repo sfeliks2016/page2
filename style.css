@@ -85,7 +85,7 @@ ul > li:hover > ul {
 /* container */
 
 .container {
-    width: 80%;
+    width: 50%;
     max-width: 600px;
     min-height:400px; 
     box-shadow: 2px 2px 5px #444;
@@ -192,6 +192,17 @@ ul > li:hover > ul {
 	margin: auto;
 }
 
+/* -- MENU ---*/
+
+.mp {
+    flex: 1;
+    border: 1px solid #222;
+}
+
+.no-1 {
+    order: -1;
+}
+
 /*---- MEDIA ----*/
 @media screen and (max-width: 767px)
 {
@@ -206,23 +217,6 @@ ul > li:hover > ul {
         padding: 0
     }
     
-    .nav a i.fa {
-        font-size: 80px
-    }
-    
-    img:hover ul{
-        display: block;
-        
-    }
-    
-    .nav:hover ul li {
-        margin: 0 auto;
-        
-    }
-    
-    .nav:hover  {
-        margin: 0 auto;
-    }
 }
 
 /* For tablets */
