@@ -81,7 +81,7 @@ body {
     clear: both;
 }
 
-.fa-bars {
+i.fa-bars {
     display: none;
     color: #fff;
     width: 40px;
@@ -273,7 +273,7 @@ body {
         width: 100%;
     }
     
-    .fa-bars {
+    i.fa-bars {
         display: block;
     }
  
