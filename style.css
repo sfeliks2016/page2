@@ -1,85 +1,92 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: "Quicksand";
-    background-color: lightgray
-       
+    background-color: #cbcaca;   
 }
 
-/* navigation */
-.nav {
+.header {
+	float: left;
+	width: 100%;
+	background-color: #888;
+	padding: 10px;
+}
+
+.wrapper {
+	float: left;
     width: 100%;
-    height: 90px;
-    padding: 5px;
-    background-color: orange;
-    color:#fff;
-    text-align: center;
-}
-
-ul {
-    margin: 0;
     padding: 0;
-    display: inline-block;
+    margin: 0 auto;
+    //background-color: #444;
+}
+
+
+.logo {
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;    
+    float: left;
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+    margin: 10px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.header nav {
+    float: right;
+}
+
+.header nav ul {
+    	margin:10px;
+    	padding:0;
+    	text-align: center;
+}
+
+.header nav ul li {
+	display: inline-block;
+	width: 130px;
     list-style-type: none;
-    
+    margin-left: 10px;
 }
 
-nav > ul > li {
-    float:left; 
-    margin: 5px;
+.header nav li a {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	font-size: 18px; /* line-height = height/2 as padding =10px*/
+	line-height: 20px;
+	padding: 10px;
+	color: #fff;
+	background-color: #fcc767;
+	border-radius: 10px;
+	box-shadow: 2px 5px 5px #111;
 }
 
-nav a.menu {
-    font-size: 60px;
-    display: none;
-}
-
-
- a {
-    display: inline-block;
-    width:180px;
-    padding: 25px 20px;
-    color: #fff;
-    text-decoration: none;
-    background-color: #fcc767;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 5px 5px #111;
-}
-
-ul li ul li:nth-of-type(1) a {
-    margin-top: 5px;
-}
-
-ul li ul li a {
-    margin-top: 5px;
-}
-
-a:hover {
-    background-color: #444;
+.header nav ul li a:hover {
+    background-color: #222;
     color: red;
 }
 
-ul > li > ul {
-    list-style-type: none;
+.clear {
+    clear: both;
+}
+
+.fa-bars {
     display: none;
-}
-
-ul > li >ul >li {
-    background-color: transparent;
-    position:relative;
-    width:180px; 
-}
-
-ul > li:hover > ul {
-    display:block;
-    transition: max-height 0.6s ease-in;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
 }
 
 /* container */
@@ -174,7 +181,7 @@ ul > li:hover > ul {
 }
 
 /* justify item */
-.wrapper .row {
+.wrap .row {
     height: 200px;
 }
 
@@ -203,30 +210,72 @@ ul > li:hover > ul {
     order: -1;
 }
 
+
+
 /*---- MEDIA ----*/
-@media screen and (max-width: 767px)
+@media screen and (max-width: 780px)
 {
-    ul {
-        display: none;
+    .header nav {
+    	float: none;
+    	clear: left;
+    	width: 100%;
     }
-    
-    .nav a.menu {
-        display: inline-block;
-        width: 90px;
-        height: 80px;
-        padding: 0
+
+    .logo {
+    	float: none;
+    	margin: 10px auto;
+    }
+
+    .header nav ul li  {
+    	margin: 0 5px;
     }
     
 }
 
-/* For tablets */
-/*
-@media (max-width: 767px){
-        
-    .navbar {
+
+/* mobiles */
+@media screen and (max-width: 480px) {
+	
+	.burger-nav {
+		display: block;
+		height: 40px;
+		width: 40px;
+		background: url(images/menu.png) no-repeat 100% center;
+		background-color: #707070;
+        position: absolute;
+        top: 20px;
+        left: 85%;
+        font-size: 35px;
+        line-height: 40px;
         text-align: center;
+	}
+
+	.header nav ul {
+		overflow: hidden;
+		//background-color: #505050;
+		height: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	.header nav ul.open {
+		height: auto;
+	}
+
+	.header nav ul li {
+		float: none;
+		text-align: left;
+		width: 90%;
+		margin: 5px 5%;
+	}
+    
+    .header nav ul li a {
+        width: 100%;
     }
-    .navbar ul {
-        float: none;
+    
+    .fa-bars {
+        display: block;
     }
-*/
+ 
+
+}
