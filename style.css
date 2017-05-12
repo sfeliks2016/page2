@@ -249,7 +249,7 @@ i.fa-bars {
 		height: 50px;
 		width: 50px;
 		background: url(images/menu.png) no-repeat 100% center;
-		background-color: #707070;
+		//background-color: #707070;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -301,6 +301,7 @@ i.fa-bars {
     }
     .container {
         width: 90%;
+        margin: 20px auto;
         line-height: 150%;
 
     }
