@@ -216,6 +216,7 @@ i.fa-bars {
 
 
 /*---- MEDIA ----*/
+/*
 @media screen and (max-width: 780px)
 {
     .header nav {
@@ -234,11 +235,13 @@ i.fa-bars {
     }
     
 }
-
+*/
 
 /* mobiles */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
 	
+
+    
 	.burger-nav {
 		display: block;
 		height: 40px;
@@ -247,10 +250,16 @@ i.fa-bars {
 		background-color: #707070;
         position: absolute;
         top: 20px;
-        left: 85%;
+        right: 20px;
         text-align: center;
 	}
-
+    
+    .header nav {
+    	float: none;
+    	clear: left;
+    	width: 100%;
+    }
+    
 	.header nav ul {
 		overflow: hidden;
 		//background-color: #505050;
