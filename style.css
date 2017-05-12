@@ -90,6 +90,8 @@ i.fa-bars {
     color: #fff;
     width: 40px;
     height: 40px;
+    line-height: 40px;
+    padding: 0;
 }
 
 /* container */
@@ -281,6 +283,8 @@ i.fa-bars {
     
     .header nav ul li a {
         width: 100%;
+        font-size: 20px;
+        font-weight: 800
     }
     
     i.fa-bars {
@@ -288,7 +292,16 @@ i.fa-bars {
         text-decoration: none;
         line-height: 40px;
         font-size: 40px;
+        padding: 0;
     }
- 
+     
+    body {
+        font-size: 18px;
+    }
+    .container {
+        width: 90%;
+        line-height: 150%;
+
+    }
 
 }
