@@ -90,8 +90,8 @@ i.fa-bars {
     color: #fff;
     width: 40px;
     height: 40px;
-    line-height: 40px;
     padding: 0;
+    margin: 0;
 }
 
 /* container */
@@ -246,15 +246,15 @@ i.fa-bars {
     
 	.burger-nav {
 		display: block;
-		height: 40px;
-		width: 40px;
+		height: 50px;
+		width: 50px;
 		background: url(images/menu.png) no-repeat 100% center;
 		background-color: #707070;
         position: absolute;
         top: 20px;
         right: 20px;
         text-align: center;
-        padding: 0;
+        padding: 5px;
         margin: 0;
 	}
     
@@ -294,7 +294,6 @@ i.fa-bars {
         text-decoration: none;
         line-height: 40px;
         font-size: 40px;
-        padding: 0;
     }
      
     body {
