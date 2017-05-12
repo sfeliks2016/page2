@@ -254,6 +254,8 @@ i.fa-bars {
         top: 20px;
         right: 20px;
         text-align: center;
+        padding: 0;
+        margin: 0;
 	}
     
     .header nav {
