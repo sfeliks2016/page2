@@ -1,5 +1,5 @@
 moje pierwsze kroki z Dropdown menu. 
 
-/home/sfx/Desktop/Remote-Repo/page2/
+https://sfeliks2016.github.io/page2/
 
 
